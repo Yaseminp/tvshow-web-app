@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+  background-color: #2EFEF7;
+}
+html, body { height: 100%; }
+body { margin: 010px; font-family: "Comic Sans MS", cursive, sans-serif;}
+h2 {font-family: "Comic Sans MS", cursive, sans-serif;}
+
+.mat-toolbar {font-family:'Comic Sans MS,cursive,sans-serif';
+  font-weight: bold; border: 1px solid #3c137d; box-shadow: 0 0 50px #00591b;}
+  .mat-card {background-color: #05b19a; margin-right: 200px; margin-left: 200px }
