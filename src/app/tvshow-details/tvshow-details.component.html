@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="current"></div>
   <div>
     <span>{{current.name}}</span>
   </div>
@@ -12,12 +12,13 @@
     {{current.schedule}}, {{current.days}}
   </div>
   <div>
-    Rate: {{current.rating}}
+   {{current.rating}}
   </div>
   <div>
     {{current.runtime}} minutes
   </div>
+  <div
+    [innerHTML]="current.summary"></div>
   
-  <div>{{current.summary}}</div>
   
 </div>

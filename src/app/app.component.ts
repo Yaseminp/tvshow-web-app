@@ -15,7 +15,7 @@ TvSearch: ITvShow;
   constructor(private tvshowservice: TvShowService){}
 
   doSearch(searchValue){
-   const userInput = searchValue
+   const userInput = searchValue;
    this.tvshowservice.getTvShow(userInput).subscribe(data =>this.TvSearch = data);
 }
   
