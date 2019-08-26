@@ -1,15 +1,33 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { ShowSearchComponent } from './show-search/show-search.component';
+import { TvshowDetailsComponent } from './tvshow-details/tvshow-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatCardModule,
+        FormsModule,
+        ReactiveFormsModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        ShowSearchComponent,
+        TvshowDetailsComponent,
       ],
     }).compileComponents();
   }));
